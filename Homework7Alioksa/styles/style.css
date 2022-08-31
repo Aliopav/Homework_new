@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+}
+.table {
+  height: 1180px;
+  width: 100%;
+  background-color: grey;
+  border: 5px solid rgb(108, 61, 61);
+}
+.thead {
+  display: table-header-group;
+
+  text-align: center;
+}
+.tbody {
+  height: 74%;
+  width: 100%;
+
+  margin-top: 20px;
+}
+.tr {
+  display: table-row;
+}
+.td {
+  display: table-cell;
+  border: 1px solid;
+}
+
+.thead {
+  background-color: grey;
+  text-align: center;
+  height: 150px;
+}
+
+.menu {
+  color: black;
+  background-color: white;
+  height: 30px;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-align: center;
+}
+.menu span {
+  margin: 30px;
+  font-weight: bold;
+}
+
+.page1 img {
+  width: 300px;
+  height: 200px;
+  margin-top: 5px;
+  margin: 10px;
+}
+.page1 p {
+  font-size: 20px;
+  text-align: center;
+  color: yellow;
+}
+.flex {
+  display: flex;
+}
+.text {
+  background-color: white;
+  height: 100%;
+  font-size: 18px;
+}

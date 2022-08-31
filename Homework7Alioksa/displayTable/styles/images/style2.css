@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+}
+.table {
+  height: 1200px;
+  width: 100%;
+  background-color: grey;
+  border: 3px solid;
+}
+.thead {
+  background-color: grey;
+  text-align: center;
+  height: 150px;
+}
+.menu {
+  color: black;
+  background-color: white;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+.menu span {
+  margin: 30px;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+.page_left img {
+  width: 300px;
+  height: 200px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.page_right img {
+  width: 300px;
+  height: 200px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+.first_p {
+  color: white;
+  margin-top: 30px;
+  text-align: center;
+}
+.text {
+  background-color: white;
+  height: 100%;
+  font-size: 18px;
+  margin: 5px;
+  margin-top: 20px;
+}
+.page_left p,
+.page_right p {
+  color: yellow;
+}

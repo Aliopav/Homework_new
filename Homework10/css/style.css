@@ -1,0 +1,59 @@
+body {
+  background-color: blueviolet;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+form {
+  margin-left: 600px;
+}
+.main {
+  display: flex;
+  margin-top: 50px;
+}
+.main .label,
+.main .text {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.text input {
+  margin-top: 10px;
+  height: 20px;
+}
+.label label {
+  margin-top: 14px;
+}
+.radio,
+.checkbox {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.birthday {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.data {
+  margin-top: 10px;
+}
+.submit {
+  display: flex;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.submit label,
+.submit input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+input:invalid {
+  border: 2px solid red;
+}
+@media (max-width: 1000px) {
+  form {
+    margin-left: 0px;
+  }
+}

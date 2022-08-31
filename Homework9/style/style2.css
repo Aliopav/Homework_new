@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+}
+.table {
+  height: 950px;
+  width: 100%;
+  background-color: grey;
+  border: 3px solid;
+}
+.thead {
+  background-color: grey;
+  text-align: center;
+  height: 150px;
+}
+.menu {
+  color: black;
+  background-color: white;
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+.menu span {
+  margin: 30px;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+.page_left img {
+  width: 300px;
+  height: 200px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.page_right img {
+  width: 300px;
+  height: 200px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+.first_p {
+  color: white;
+  margin-top: 30px;
+  text-align: center;
+}
+.text {
+  background-color: white;
+  height: 100%;
+  font-size: 18px;
+  margin: 5px;
+  margin-top: 20px;
+}
+.page_left p,
+.page_right p {
+  color: yellow;
+}
+.menu_mobile {
+  display: none;
+}
+.submenu {
+  display: none;
+}
+span p {
+  text-align: center;
+}
+span a {
+  text-decoration: none;
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  .page_left img,
+  .page_right img {
+    width: 115px;
+    height: 90px;
+  }
+  .table {
+    height: 1500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .table {
+    height: 1560px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .page_left,
+  .page_right {
+    display: flex;
+  }
+  .page_left img,
+  .page_right img {
+    width: 115px;
+    height: 90px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+  .menu_mobile {
+    display: block;
+    cursor: pointer;
+    border: 2px solid;
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    margin-left: 5px;
+  }
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    position: absolute;
+    display: none;
+  }
+  .menu_mobile:hover > div {
+    display: block;
+  }
+}
