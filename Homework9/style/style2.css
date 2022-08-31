@@ -117,6 +117,7 @@ span a {
     height: 20px;
     background-color: white;
     margin-left: 5px;
+    font-weight: bold;
   }
   .submenu {
     display: flex;
@@ -127,9 +128,18 @@ span a {
     height: 200px;
     z-index: 2;
     position: absolute;
+    left: 15px;
     display: none;
   }
-  .menu_mobile:hover > div {
-    display: block;
+  .submenu span {
+    font-weight: bold;
+    height: 30px;
+  }
+  .submenu span:hover {
+    background-color: grey;
+  }
+
+  .menu_mobile:hover div.submenu {
+    display: flex;
   }
 }
