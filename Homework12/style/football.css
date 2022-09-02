@@ -1,0 +1,78 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "aside section piactuare"
+    "footer footer footer";
+  grid-template-columns: 200px 1fr 100px;
+}
+
+header {
+  grid-area: header;
+  background-color: blue;
+  text-align: center;
+  font-size: 15px;
+}
+.aside {
+  display: none;
+}
+aside {
+  grid-area: aside;
+  width: 170px;
+  background-color: yellow;
+}
+aside a {
+  text-decoration: none;
+}
+aside li {
+  margin-top: 5px;
+}
+section img {
+  float: left;
+}
+section h3 {
+  text-align: center;
+}
+section p {
+  padding-left: 5px;
+}
+footer {
+  grid-area: footer;
+  background-color: blue;
+  text-align: center;
+}
+picture {
+  background-image: url(image/football.jpg);
+  background-repeat: repeat-y;
+  opacity: 0.6;
+}
+@media (max-width: 600px) {
+  header,
+  footer,
+  picture {
+    display: none;
+  }
+  aside {
+    background-color: white;
+    width: auto;
+  }
+  aside a {
+    text-decoration: underline;
+    margin-top: 0;
+  }
+  aside h3 {
+    text-align: center;
+  }
+  section {
+    grid-column: 1 / 4;
+  }
+  .grid {
+    grid-template-columns: 1fr 0 0;
+  }
+  aside ul {
+    display: none;
+  }
+  .aside {
+    display: block;
+  }
+}
